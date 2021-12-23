@@ -55,32 +55,40 @@ body {
 .section__primary {
     display: flex;
     justify-content: space-between;
+    gap: 5%;
+    margin-top: 5em;
+    flex-direction: row;
+    
     
 }
 .content__header {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 15px;
+    padding-top: 5em;
+    
 }
 .content__header-main {
     display: flex;
     flex-direction: column;
+    
 }
 
 h1.content__header-title {
     font-weight: 700;
     font-family: "Raleway";
-    font-size: 30px;
+    font-size: 2em;
     color: var(--Very-Dark-Blue);
     line-height: 1.5em;
 }
 p.content__header-description {
-    font-size: 14px;
+    font-size: 1em;
     font-family: "Open Sans";
 }
 .content__header-form {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 input#email::placeholder {
     color: lightgray;
@@ -93,8 +101,91 @@ input#email::placeholder {
     width: 65%;
     padding:15px;
 }
-.content__header-img img {
-    width: 90%;
+.content__header-img {
+    
+    display: flex;
+    justify-content: center;
+}
+.section__info{
+    background-image: url("../images/bg-curve-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    margin-top: 5em;
+    justify-content: space-between;
+    
+    
+}
+.content__info{
+    display: flex;
+    gap: 5em;
+    padding: 8em 0;
+}
+.content__info-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.content__info-title{
+    font-family: "Raleway";
+    color: var(--Very-Dark-Blue);
+    font-size: 2em;
+    font-weight: 700;
+}
+.content__info-description{
+    font-size: 1em;
+    
+}
+.highlight{
+    color: var(--Moderate-Cyan);
+    border-bottom: 1px solid var(--Moderate-Cyan);
+    width: 35%;
+}
+
+.highlight img {
+    vertical-align: middle;
+}
+.card__testimonial{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 13px 2px rgba(0,0,0,0.26);
+    width: 65%;
+}
+.card__testimonial .quotes{
+    width: 5%;
+}
+.card__testimonial-description{
+    font-size: .70em;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    line-height: 1.75;
+    color: var(--Very-Dark-Blue);
+    font-weight: 700;
+}
+.card__testimonial-avatar{
+    display: flex;
+    align-items: center;
+}
+.card__testimonial-avatar img{
+    border-radius: 100px;
+    width: 10%;
+
+    vertical-align: middle;
+}
+.card__testimonial_avatar-description{
+    font-size: .75em;
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 5px;
+    color: var(--Very-Dark-Blue);
+}
+.ceo{
+    font-weight: bold;
+    font-size: .85;
+    font-family: "Raleway";
 }
 /* footer */
 
@@ -102,7 +193,6 @@ input#email::placeholder {
 .container {
     max-width: 1150px;
     margin: 0 auto;
-    padding: 15px;
 }
 .img-fluid {
     max-width: 100%;
